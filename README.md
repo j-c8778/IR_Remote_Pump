@@ -1,14 +1,14 @@
 # IR_Remote_Pump
 ## Code that runs on an Arduino Mega that will:
-### -Remotely control a submersible pump that does the following:  
+### Provides remote control for a submersible pump that does the following:  
    -Runs the pump when commanded for a specified amount of time  
    -Is controlled by an IR Remote  
-   -Has a timer to cycle the pump periodically  
    -Has an ultrasonic sensor to check supply tank level  
    -Cycles a buzzer if level is not above 6 inches
-   -Will not start the pump if level is to low
+   -Will not start the pump if level is to low  
+   -Has a timer to cycle the pump periodically  
 
-## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, GITHUB HAS THIS AS A C++ FILE
+## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, UPLOADED TO GITHUB AS AN C++ FILE, WRITTEN IN VISUAL STUDIO
 
 To Do:  
 [ ] -Add buzzer functionality  
