@@ -1,2 +1,4 @@
 # IR_Remote_Pump
-Repo to cycle an IR controlled Submersible Pump
+Repo for code that controls the cycle an submersible pump
+Controlled by an IR Remote
+With an ultrasonic sensor to check supply tank level
