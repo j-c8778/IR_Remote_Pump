@@ -11,8 +11,11 @@
 
 To Do:
 [ ] -Add buzzer functionality
+
 [ ] -Add time functionality
+
 [ ] -Add aditional run time options
 
 Future Plans:
+
 [ ] -Add Countdown Display for timer and run time
