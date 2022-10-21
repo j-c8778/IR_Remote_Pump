@@ -1,4 +1,4 @@
-# IR_Remote_Pump
+# Infrared Remote Controlled Submersible Pump
 ## Code that runs on an Arduino Mega that will:
 ### Provides remote control for a submersible pump that does the following:  
    -Runs the pump when commanded for a specified amount of time  
@@ -8,6 +8,7 @@
    -Will not start the pump if level is to low  
    -Has a timer to cycle the pump periodically  
 
+The physical system this is meant to operate is a small submersible pump, supplied by some sort of sump, that discharges to a water load, such as a set of houseplants.  
 ## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, UPLOADED TO GITHUB AS AN C++ FILE, WRITTEN IN VISUAL STUDIO
 
 To Do:  
