@@ -18,3 +18,5 @@ To Do:
 
 Future Plans:  
 [ ] -Add countdown display for timer and run time
+
+![Image of Gowron Meme](https://thumbs.gfycat.com/AcclaimedThinAvocet-size_restricted.gif)
