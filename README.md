@@ -8,3 +8,11 @@
 #### -Cycles a buzzer if level is not above 6 inches
 #### -Will cycle pump on command if level in supply tank is high enough
 ## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, GITHUB HAS THIS AS A C++ FILE
+
+To Do:
+[ ] -Add buzzer functionality
+[ ] -Add time functionality
+[ ] -Add aditional run time options
+
+Future Plans:
+[ ] -Add Countdown Display for timer and run time
