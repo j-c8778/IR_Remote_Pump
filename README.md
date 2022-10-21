@@ -10,10 +10,9 @@
 ## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, GITHUB HAS THIS AS A C++ FILE
 
 To Do:
+
 [ ] -Add buzzer functionality
-
 [ ] -Add time functionality
-
 [ ] -Add aditional run time options
 
 Future Plans:
