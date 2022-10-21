@@ -1,4 +1,7 @@
 # IR_Remote_Pump
-Repo for code that controls the cycle an submersible pump
-Controlled by an IR Remote
-With an ultrasonic sensor to check supply tank level
+Repo for code that controls the following functions on an Arduino that will:
+-Cycle an submersible pump on command
+-Is controlled by an IR Remote
+-Has a Timer to Cycle periodically
+-Has an ultrasonic sensor to check supply tank level
+-Cycles a buzzer if level is not above 6 inches
