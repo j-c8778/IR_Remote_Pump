@@ -5,4 +5,4 @@
 ### -Has a Timer to Cycle periodically
 ### -Has an ultrasonic sensor to check supply tank level
 ### -Cycles a buzzer if level is not above 6 inches
-## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, GITHUB HAS THIS AS A C++ FILES
+## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, GITHUB HAS THIS AS A C++ FILE
