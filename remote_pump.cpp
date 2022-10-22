@@ -4,6 +4,9 @@ Pump will cycle on and off based on a defined run time
 Defined run time is based on the IR signal sent to the board
 Setup for an Arduino Mega, using Arduino kit IR Receiver, and
 a 12 volt relay controlling a submersible pump.
+Arduino Model: Mega
+IR Receiver Model: Generic off the shelf
+Ultrasonic Sensor Model: HC-SR04
 Author: Jessie Campbell
 Last Edit: 10/21/22
 
@@ -14,9 +17,9 @@ TO DO:
 #include <Servo.h>
 #include <IRremote.h>
 
-#define P1
+#define P1 // attac pin 1 Arduino to pin for relay
 #define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
-#define trigPin 3 //attach pin D3 Arduino to pin Trig of HC-SR04
+#define trigPin 3 // attach pin D3 Arduino to pin Trig of HC-SR04
 
 //constants
 const int RecvPin = 11; //sets the ir input pin to 11
@@ -34,7 +37,10 @@ void setup() {
 	Serial.begin(115200); // baud rate based on the model of IR reciever, tested expermentially
 	irrecv.enableIRIn();
 	irrecv.blink13(true);
-	pinMode(relay_pin, OUTPUT);
+	pinMode(relay_pin, OUTPUT); //Sets the relay pin as an OUTPUT
+    pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+    pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+
 }
 
 void loop() {
@@ -73,13 +79,8 @@ void checkLevel() {
     // Reads the echoPin, returns the sound wave travel time in microseconds
     duration = pulseIn(echoPin, HIGH);
     // Calculating the distance
-    distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
-    /*
-    // Displays the distance on the Serial Monitor
-    Serial.print("Distance: ");
-    Serial.print(distance);
-    Serial.println(" cm");
-    */
+    distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (to and from)
+
     if (distance >= 15.24) { //15.24 cm is 6 inches
         //return a value of 1
         level = 1;
@@ -95,12 +96,12 @@ void run_pump_short() { // runs for 1 minute
     digitalWrite(relay_pin, HIGH);
     delay(5000);
     digitalWrite(relay_pin, LOW);
-    delay(5000);
+    delay(2000); // 2 second delay to prevent recycle of pump
 }
 
 void run_pump_long() { // runs for 1 minute
     digitalWrite(relay_pin, HIGH);
     delay(60000);
     digitalWrite(relay_pin, LOW);
-    delay(60000);
+    delay(2000); // 2 second delay to prevent recycle of pump
 }
