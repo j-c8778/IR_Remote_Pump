@@ -12,9 +12,11 @@ The physical system this is meant to operate is a small submersible pump, suppli
 ## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, UPLOADED TO GITHUB AS AN C++ FILE, WRITTEN IN VISUAL STUDIO
 
 To Do:  
+[ ] -Add flashing LED indicators  
 [ ] -Add buzzer functionality  
 [ ] -Add timer functionality  
 [ ] -Add aditional run time options beyond 5 seconds and 1 minute  
+
 
 Future Plans:  
 [ ] -Add countdown display for timer and run time
