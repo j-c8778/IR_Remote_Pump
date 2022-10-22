@@ -40,6 +40,7 @@ void setup() {
     pinMode(relay_pin, OUTPUT); //Sets the relay pin as an OUTPUT
     pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
     pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+
 }
 
 void loop() {
@@ -80,11 +81,11 @@ void checkLevel() {
     // Calculating the distance
     distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (to and from)
 
-    if (distance >= 15.24) { //15.24 cm is 6 inches
+    if (distance <= 15.24) { //15.24 cm is 6 inches
         //return a value of 1
         level = 1;
     }
-    else if (distance < 15.24) {
+    else if (distance > 15.24) {
         //return a value of 0
         level = 0;
     }
