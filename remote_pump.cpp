@@ -69,7 +69,7 @@ void loop() {
     }
 }
 
-void checkLevel() {
+int checkLevel() {
     digitalWrite(trigPin, LOW);
     delayMicroseconds(2);
     // Sets the trigPin HIGH (ACTIVE) for 10 microseconds
