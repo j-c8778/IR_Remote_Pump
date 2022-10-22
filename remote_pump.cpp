@@ -11,13 +11,14 @@ Author: Jessie Campbell
 Last Edit: 10/21/22
 
 TO DO:
+-Correct Pin Layout for Arduino Mega vs ATTiny85
 -Add buzzer functionality
 */
 
 #include <Servo.h>
 #include <IRremote.h>
 
-#define P1 // attac pin 1 Arduino to pin for relay
+#define P1 // attach pin 1 Arduino to pin for relay
 #define echoPin 2 // attach pin D2 Arduino to pin Echo of HC-SR04
 #define trigPin 3 // attach pin D3 Arduino to pin Trig of HC-SR04
 
