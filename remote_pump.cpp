@@ -34,13 +34,12 @@ IRrecv irrecv(RecvPin);
 decode_results results;
 
 void setup() {
-	Serial.begin(115200); // baud rate based on the model of IR reciever, tested expermentially
-	irrecv.enableIRIn();
-	irrecv.blink13(true);
-	pinMode(relay_pin, OUTPUT); //Sets the relay pin as an OUTPUT
-	pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
-	pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
-
+    Serial.begin(115200); // baud rate based on the model of IR reciever, tested expermentially
+    irrecv.enableIRIn();
+    irrecv.blink13(true);
+    pinMode(relay_pin, OUTPUT); //Sets the relay pin as an OUTPUT
+    pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+    pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
 }
 
 void loop() {
