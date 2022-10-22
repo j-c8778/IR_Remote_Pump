@@ -38,8 +38,8 @@ void setup() {
 	irrecv.enableIRIn();
 	irrecv.blink13(true);
 	pinMode(relay_pin, OUTPUT); //Sets the relay pin as an OUTPUT
-    pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
-    pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
+	pinMode(trigPin, OUTPUT); // Sets the trigPin as an OUTPUT
+	pinMode(echoPin, INPUT); // Sets the echoPin as an INPUT
 
 }
 
