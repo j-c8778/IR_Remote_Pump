@@ -12,6 +12,7 @@ The physical system this is meant to operate is a small submersible pump, suppli
 ## NOTE: IN THE CURRENT VERSION, COPY AND PASTE TO THE ARDUINO IDE, UPLOADED TO GITHUB AS AN C++ FILE, WRITTEN IN VISUAL STUDIO
 
 To Do:  
+[ ] -Update Pins to correct from ATTiny 85 test bed to Arduino Mega (more flexibility vs smaller footprint)
 [ ] -Add flashing LED indicators  
 [ ] -Add buzzer functionality  
 [ ] -Add timer functionality  
@@ -19,6 +20,7 @@ To Do:
 
 
 Future Plans:  
-[ ] -Add countdown display for timer and run time
+[ ] -Add countdown display for timer and run time  
+[ ] -Modify code to run on ATTiny85 or other small form factor microprossor controller
 
 ![Image of Gowron Meme](https://thumbs.gfycat.com/AcclaimedThinAvocet-size_restricted.gif)
